@@ -14,12 +14,11 @@ import babel from 'gulp-babel';
 import uglify from 'gulp-uglify';
 import imagemin from 'gulp-imagemin';
 
-const { src, dest, watch, series, parallel } = pkg,
-      { create } = browserSync,
-      sass = gulpSass(dartSass);
+const { src, dest, watch, series, parallel } = pkg, { create } = browserSync,
+sass = gulpSass(dartSass);
 
 function clean() {
-    return src('app/build/**/*', { read: false })
+    return src(['app/build/css/*', 'app/build/js/*', 'app/build/*.html'], { read: false })
         .pipe(del());
 }
 
@@ -70,18 +69,18 @@ function javascript() {
         .pipe(browserSync.stream());
 }
 
-const build = function () {
+const build = function() {
     browserSync.init({
         server: { baseDir: "app/build" }
     });
-    watch(['app/src/html/*.html', 'app/src/scss/**/*.scss', 'app/src/js/**/*.js'], 
-    series(
-        clean, 
-        // clearCache,
-        fonts, 
-        images,
-    parallel(html, css, javascript)))
-    .on('change', browserSync.reload);
+    watch(['app/src/html/*.html', 'app/src/scss/**/*.scss', 'app/src/js/**/*.js'],
+            series(
+                clean,
+                // clearCache,
+                fonts,
+                images,
+                parallel(html, css, javascript)))
+        .on('change', browserSync.reload);
 };
 
 export { build as default };
