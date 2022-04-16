@@ -35,6 +35,7 @@
     &__name {
         margin-top: 50px;
         @include font(Roboto, normal, 300, 14px, 18px, #323642);
+        text-transform: uppercase;
     }
     &__line {
         width: 200px;
@@ -62,6 +63,12 @@
     &__description {
         margin-top: 30px;
         @include font(Roboto, normal, 400, 14px, 22px, #323642);
+        text-align: center;
+    }
+    &__description>strong {
+        margin-right: 11px;
+        color: #F24458;
+        text-decoration: line-through;
     }
     &__link {
         width: 205px;
