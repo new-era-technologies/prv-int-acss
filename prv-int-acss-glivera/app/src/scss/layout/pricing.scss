@@ -9,6 +9,11 @@
         flex-direction: column;
         box-sizing: border-box;
     }
+    &__inner {
+        &--ways {
+            margin-top: 40px;
+        }
+    }
     &__title {
         margin-top: 60px;
         @include font(Roboto, normal, 300, 32px, 44px, #fff);
@@ -81,5 +86,42 @@
         justify-content: center;
         align-items: center;
         text-decoration: none;
+    }
+}
+
+.ways {
+    &__title {
+        @include font(Roboto, normal, 300, 18px, 28px, #fff);
+        text-align: center;
+    }
+    &__list {
+        margin-top: 20px;
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__item {
+        margin-bottom: 30px;
+    }
+    &__link {
+        display: flex;
+        &--anon {
+            margin-top: 10px;
+        }
+        &--anon,
+        &--gift {
+            margin-bottom: 40px;
+            @include font(Roboto, normal, 300, 14px, 18px, #4CB649);
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        &--anon>img,
+        &--gift>img {
+            margin-left: 15px;
+        }
     }
 }
