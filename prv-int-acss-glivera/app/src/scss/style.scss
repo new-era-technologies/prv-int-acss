@@ -14,3 +14,9 @@
     width: 375px;
     margin: 0 auto;
 }
+
+@media all and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+}
