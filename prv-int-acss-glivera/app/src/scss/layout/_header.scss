@@ -3,6 +3,8 @@
         width: 100%;
         height: 70px;
         padding: 0 10px;
+        display: flex;
+        justify-content: space-between;
         box-sizing: border-box;
     }
     &__inner {
@@ -58,8 +60,6 @@
         &__wrapper {
             height: 100px;
             padding: 0 60px;
-            display: flex;
-            justify-content: space-between;
         }
         &__inner:nth-child(2) {
             justify-content: center;
