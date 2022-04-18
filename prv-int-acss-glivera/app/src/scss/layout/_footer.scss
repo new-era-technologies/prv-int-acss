@@ -1,0 +1,103 @@
+.footer {
+    &__wrapper {
+        width: 100%;
+        height: 100%;
+        margin-top: 46px;
+        margin-bottom: 50px;
+        padding: 0 20px;
+    }
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+    &__logo {
+        margin-left: 0;
+        margin-bottom: 45px;
+    }
+    &__logo>img {
+        width: 238px;
+    }
+    &__inner:nth-child(2) {
+        margin-left: 40px;
+    }
+    &__inner:nth-child(4) {
+        margin-left: 56px;
+    }
+    &__inner:nth-child(4)>h6 {
+        margin-bottom: 22px;
+    }
+    &__inner:nth-child(4)>ul {
+        width: 148px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__inner:nth-child(4)>ul:nth-child(1)>li:nth-child(2),
+    &__inner:nth-child(4)>ul:nth-child(1)>li:nth-child(5) {
+        margin-right: 0;
+    }
+    &__par {
+        margin-bottom: 15px;
+        @include font(Roboto, normal, 500, 14px, 18px, #323642);
+        text-align: left;
+        text-transform: uppercase;
+    }
+    &__item {
+        margin-bottom: 15px;
+    }
+    &__link {
+        display: flex;
+        text-decoration: none;
+    }
+    &__link,
+    &__text {
+        @include font(Roboto, normal, 400, 14px, 22px, #889099);
+    }
+    &__inner:nth-child(2)>ul:nth-child(1)>li:nth-child(1) {
+        margin-bottom: 56px;
+    }
+    &__inner:nth-child(4)>ul>li {
+        margin-right: 24px;
+        margin-bottom: 25px;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .footer {
+        &__wrapper {
+            margin-top: 72px;
+            margin-bottom: 90px;
+            padding: 0;
+        }
+        &__content {
+            flex-wrap: wrap;
+        }
+        &__logo {
+            margin-bottom: 73px;
+        }
+        &__inner:nth-child(2) {
+            margin-left: 46px;
+        }
+        &__inner:nth-child(3) {
+            margin-left: 60px;
+        }
+        &__inner:nth-child(4) {
+            order: 1;
+        }
+        &__inner:nth-child(5) {
+            width: 600px;
+            margin-left: 71px;
+        }
+        &__par {
+            margin-bottom: 18px;
+        }
+        &__item {
+            margin-bottom: 18px;
+        }
+        &__inner:nth-child(2)>ul:nth-child(2)>li:nth-child(2) {
+            margin-bottom: 102px;
+        }
+    }
+}
