@@ -126,7 +126,7 @@
 @media all and (min-width: 1200px) {
     .posts {
         &__wrapper {
-            flex-direction: row;
+            display: grid;
         }
         &__title {
             margin-bottom: 40px;
@@ -137,13 +137,16 @@
             padding: 0;
             &--articles {
                 width: 800px;
+                grid-row-start: 1;
+                grid-row-end: 3;
                 border-right: 1px solid #EBECED;
                 box-sizing: border-box;
             }
             &--search {
-                margin: 0 0 40px 0;
-                padding: 0 20px;
-                order: -1;
+                width: auto;
+                margin: 0 0 0 auto;
+                padding: 0;
+                grid-column-start: 2;
             }
             &--ext_info {
                 margin-top: 0;
@@ -156,26 +159,9 @@
         }
     }
     .search {
-        display: none;
         &__input {
-            width: 335px;
+            width: 340px;
             height: 60px;
-            padding-left: 60px;
-            padding-right: 20px;
-            background: url('../assets/img/icons/search.svg') no-repeat 20px;
-            border: 1px solid #D7D8D9;
-            border-radius: 3px;
-            @include font(Roboto,
-            normal,
-            300,
-            18px,
-            28px,
-            #22252E);
-            outline: none;
-            box-sizing: border-box;
-        }
-        &__input::placeholder {
-            color: #22252E;
         }
     }
     .ext_info {
