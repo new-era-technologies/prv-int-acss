@@ -80,11 +80,7 @@ const build = function() {
                 fonts,
                 images,
                 parallel(html, css, javascript)))
-        .on('change', timeForBrowserSync);
-};
-
-const timeForBrowserSync = function() {
-    setTimeout(browserSync.reload, 3000);
+        .on('change', browserSync.reload);
 };
 
 export { build as default };
