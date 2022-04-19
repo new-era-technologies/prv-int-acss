@@ -69,12 +69,13 @@
         }
     }
     .nav {
+        margin-top: 10px;
         &__list {
             display: flex;
             align-items: center;
         }
         &__item {
-            margin-right: 30px;
+            margin-right: 36px;
             padding: 2px 0;
             border-bottom: 2px solid transparent;
             transition: .2s all;
@@ -111,6 +112,7 @@
     .start {
         width: 160px;
         height: 40px;
+        padding-top: 10px;
         margin-left: auto;
         background-color: #fff;
         border: 1px solid #4CB649;
