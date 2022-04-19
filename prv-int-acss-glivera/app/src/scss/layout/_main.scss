@@ -32,15 +32,16 @@
         width: 335px;
     }
     &__line {
-        margin-top: 25px;
+        margin-top: 5px;
+        margin-bottom: 19px;
         border: 1px solid #EBECED;
     }
 }
 
 .description {
-    margin: 20px 0;
+    margin: 21px 0 10px 0;
     &--featured {
-        margin-top: 30px;
+        margin-top: 32px;
         padding: 0 30px;
     }
     &__text {
@@ -49,33 +50,39 @@
         text-decoration: none;
     }
     &__auth {
-        margin-top: 17px;
+        margin-top: 18px;
         display: flex;
         align-items: center;
+        &--featured {
+            margin-top: 14px;
+            letter-spacing: -0.2px;
+        }
     }
     &__name,
     &__date {
         @include font(Roboto, normal, 400, 14px, 22px, #323642);
-        &--sep {
-            margin: 0 10px;
-        }
     }
     &__name {
         text-decoration: none;
     }
     &__date {
+        margin-left: 10px;
         color: #889099;
     }
 }
 
 .post-tags {
-    margin-top: 13px;
+    margin-top: 10px;
     &__list {
+        padding-top: 8px;
         display: flex;
         flex-wrap: wrap;
+        &--featured {
+            padding: 0;
+        }
     }
     &__item {
-        margin-right: 5px;
+        margin-right: 7px;
     }
     &__link {
         @include font(Roboto, normal, 400, 12px, 16px, #4CB649);
@@ -85,7 +92,7 @@
 }
 
 .comments {
-    margin-top: 12px;
+    margin-top: 10px;
     display: flex;
     align-items: center;
     text-decoration: none;
