@@ -183,6 +183,7 @@
 @media all and (min-width: 1200px) {
     .pricing {
         &__wrapper {
+            margin-top: 70px;
             padding: 0;
         }
         &__inner {
@@ -191,7 +192,7 @@
             }
         }
         &__title {
-            margin-top: 100px;
+            margin-top: 103px;
             @include font(Roboto, normal, 300, 48px, 64px, #fff);
         }
     }
@@ -203,9 +204,12 @@
         align-items: center;
         &__item {
             width: 380px;
-            margin-top: 60px;
+            margin-top: 0;
             transition: .2s all;
             box-sizing: border-box;
+        }
+        &__item:nth-child(1) {
+            margin-top: 0;
         }
         &__item:hover {
             height: 380px;
@@ -225,16 +229,25 @@
         }
         &__list {
             width: 916px;
-            margin: 30px auto 0;
-            justify-content: space-between;
+            margin: 23px auto 0;
         }
         &__item {
             margin-bottom: 0;
         }
+        &__item:nth-child(1) {
+            margin-left: 135px;
+        }
+        &__item:nth-child(4) {
+            margin-left: 26px;
+        }
+        &__item:nth-child(7) {
+            margin-left: auto;
+        }
         &__links {
-            margin-top: 8px;
+            margin-top: 34px;
             margin-bottom: 50px;
             flex-direction: row;
+            letter-spacing: 0.6px;
         }
         &__link {
             &--anon {

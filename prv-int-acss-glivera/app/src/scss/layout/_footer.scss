@@ -86,7 +86,7 @@
 @media all and (min-width: 1200px) {
     .footer {
         &__wrapper {
-            margin-top: 72px;
+            margin-top: 71px;
             margin-bottom: 90px;
             padding: 0;
         }
@@ -102,20 +102,21 @@
             grid-column-start: 1;
         }
         &__inner:nth-child(2) {
-            margin-left: 46px;
+            margin-left: 53px;
             grid-row-start: 1;
             grid-row-end: 3;
             grid-column-start: 2;
         }
         &__inner:nth-child(3) {
-            margin-left: 60px;
+            margin-top: 0;
+            margin-left: 91px;
             grid-row-start: 1;
             grid-row-end: 3;
             grid-column-start: 3;
         }
         &__inner:nth-child(4) {
-            margin-top: 0;
-            margin-left: 71px;
+            margin-top: 5px;
+            margin-left: 70px;
             grid-row-start: 2;
             grid-row-end: 3;
             grid-column-start: 4;
@@ -124,13 +125,27 @@
             flex-wrap: nowrap;
             justify-content: flex-start;
         }
-        &__inner:nth-child(4)>ul>li,
+        &__inner:nth-child(4)>ul>li {
+            margin-right: 30px;
+        }
+        &__inner:nth-child(4)>ul:nth-child(2)>li:nth-child(2) {
+            margin-right: 33px;
+        }
         &__inner:nth-child(4)>ul:nth-child(2)>li:nth-child(3) {
             margin-right: 30px;
         }
+        &__inner:nth-child(4)>ul:nth-child(2)>li:nth-child(4) {
+            margin-right: 33px;
+        }
+        &__inner:nth-child(4)>ul:nth-child(2)>li:nth-child(5) {
+            margin-right: 31px;
+        }
+        &__inner:nth-child(4)>ul:nth-child(2)>li:nth-child(6) {
+            margin-right: 0;
+        }
         &__inner:nth-child(5) {
-            width: 600px;
-            margin-left: 71px;
+            margin-top: 0;
+            margin-left: 70px;
             grid-row-start: 1;
             grid-row-end: 2;
             grid-column-start: 4;
@@ -138,11 +153,8 @@
         &__par {
             margin-bottom: 18px;
         }
-        &__item {
-            margin-bottom: 18px;
-        }
         &__inner:nth-child(2)>ul:nth-child(2)>li:nth-child(2) {
-            margin-bottom: 102px;
+            margin-bottom: 72px;
         }
     }
 }
